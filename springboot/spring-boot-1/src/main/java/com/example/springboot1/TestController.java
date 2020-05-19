@@ -6,6 +6,7 @@ import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -29,21 +30,56 @@ public class TestController {
 
     @PostMapping("/test")
     @ResponseBody
-    public String hello(@RequestParam(required = false) String st,  HttpServletRequest request) throws IOException, ServletException {
+    public String hello(@RequestParam(required = false) String gg,  HttpServletRequest request) throws IOException, ServletException {
         request.setCharacterEncoding("UTF-8");
+        String gg1 = request.getParameter("gg");
 
         String fullName = request.getParameter("fullName");
-        String queryString = new String(request.getQueryString().getBytes(),"UTF-8");
+        /*String queryString = new String(request.getQueryString().getBytes(),"UTF-8");
         String decode = URLDecoder.decode(request.getQueryString(), "UTF-8");
         Enumeration<String> attributeNames = request.getAttributeNames();
         InputStream inputStream = request.getInputStream();
 
         String guid = request.getHeader("guid");
-        String header = request.getHeader("Content-Type");
+        String header = request.getHeader("Content-Type");*/
 
         return "hh"+fullName;
     }
 
+    @PostMapping("/test11")
+    @ResponseBody
+    public String hello11(@RequestBody(required = false) String gg, HttpServletRequest request) throws IOException, ServletException {
+        request.setCharacterEncoding("UTF-8");
+        String gg1 = request.getParameter("gg");
+
+        String fullName = request.getParameter("fullName");
+        /*String queryString = new String(request.getQueryString().getBytes(),"UTF-8");
+        String decode = URLDecoder.decode(request.getQueryString(), "UTF-8");
+        Enumeration<String> attributeNames = request.getAttributeNames();
+        InputStream inputStream = request.getInputStream();
+
+        String guid = request.getHeader("guid");
+        String header = request.getHeader("Content-Type");*/
+
+        return "hh"+fullName;
+    }
+    @PostMapping("/test12")
+    @ResponseBody
+    public String hello12(@RequestParam(required = false) String gg, HttpServletRequest request) throws IOException, ServletException {
+        request.setCharacterEncoding("UTF-8");
+        String gg1 = request.getParameter("gg");
+
+        String fullName = request.getParameter("fullName");
+        /*String queryString = new String(request.getQueryString().getBytes(),"UTF-8");
+        String decode = URLDecoder.decode(request.getQueryString(), "UTF-8");
+        Enumeration<String> attributeNames = request.getAttributeNames();
+        InputStream inputStream = request.getInputStream();
+
+        String guid = request.getHeader("guid");
+        String header = request.getHeader("Content-Type");*/
+
+        return "hh"+fullName;
+    }
     @PostMapping("/test2")
     @ResponseBody
     public String hello(HttpServletRequest request,HttpServletResponse response) throws IOException {
@@ -63,4 +99,6 @@ public class TestController {
         Collection<Part> parts = request.getParts();
         return "hh";
     }
+
+
 }

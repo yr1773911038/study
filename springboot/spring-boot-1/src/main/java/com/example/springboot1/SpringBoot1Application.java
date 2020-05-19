@@ -39,9 +39,9 @@ public class SpringBoot1Application {
 		SpringApplication.run(SpringBoot1Application.class, args);
 	}
 
-	@RequestMapping("/hello")
+/*	@RequestMapping("/hello")
 	@ResponseBody
 	public String hello(){
 		return "hh";
-	}
+	}*/
 }
