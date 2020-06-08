@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="195.0">principle.interfacesegregation.demo1.B</node>
+    <node x="8.5" y="390.0">principle.interfacesegregation.demo1.A</node>
+    <node x="178.0" y="195.0">principle.interfacesegregation.demo1.D</node>
+    <node x="186.0" y="401.5">principle.interfacesegregation.demo1.C</node>
+    <node x="89.0" y="0.0">principle.interfacesegregation.demo1.Interface1</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="principle.interfacesegregation.demo1.B" target="principle.interfacesegregation.demo1.Interface1">
+      <point x="0.0" y="-72.5" />
+      <point x="79.0" y="170.0" />
+      <point x="128.5" y="170.0" />
+      <point x="-39.5" y="72.5" />
+    </edge>
+    <edge source="principle.interfacesegregation.demo1.C" target="principle.interfacesegregation.demo1.D">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="principle.interfacesegregation.demo1.A" target="principle.interfacesegregation.demo1.B">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="principle.interfacesegregation.demo1.D" target="principle.interfacesegregation.demo1.Interface1">
+      <point x="0.0" y="-72.5" />
+      <point x="257.0" y="170.0" />
+      <point x="207.5" y="170.0" />
+      <point x="39.5" y="72.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="559.5" y="304.5" />
+  <SelectedNodes>
+    <node>principle.interfacesegregation.demo1.Interface1</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
